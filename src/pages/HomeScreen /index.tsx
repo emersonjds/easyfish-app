@@ -1,10 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Button, Image, Text, View } from 'react-native';
 
 const HomeScreen: React.FC = () => {
 
-  const img1 = require('../../../assets/blog-1.jpg')
   return (
     <>
       <View
@@ -21,10 +19,7 @@ const HomeScreen: React.FC = () => {
           </Text>
         </View>
 
-
-
         <View className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
           <View
             className='pl-5 pt-3'
           >
@@ -34,7 +29,6 @@ const HomeScreen: React.FC = () => {
               Aquaponia chega ao RJ
             </Text>
           </View>
-
 
           <View className="p-5">
             <Image
