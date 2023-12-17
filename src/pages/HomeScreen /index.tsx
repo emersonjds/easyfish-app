@@ -1,12 +1,14 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
+
 
 // import { Container } from './styles';
 
 const HomeScreen: React.FC = () => {
   return (
     <>
-      <View
+      {/* <View
         style={{
           flex: 1,
           justifyContent: 'center',
@@ -17,6 +19,9 @@ const HomeScreen: React.FC = () => {
         >
           HomeScreen
         </Text>
+      </View> */}
+      <View className="flex-1 items-center justify-center bg-lime-500">
+        <Text>Open up App.js to start working on your app!</Text>
       </View>
     </>
   )
