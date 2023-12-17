@@ -1,27 +1,66 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View } from 'react-native';
-
-
-// import { Container } from './styles';
+import { Image, Text, View } from 'react-native';
 
 const HomeScreen: React.FC = () => {
+
+  const img1 = require('../../../assets/blog-1.jpg')
   return (
     <>
-      {/* <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
+      <View
+        className='flex-1 mt-10 px-4'
       >
-        <Text style={{ fontSize: 30, color: '#000' }}
+
+        <View
+          className='mb-5'
         >
-          HomeScreen
+        <Text
+          className='text-4xl font-bold text-gray-800 dark:text-white'
+        >
+          Noticias do Dia
         </Text>
-      </View> */}
-      <View className="flex-1 items-center justify-center bg-lime-500">
-        <Text>Open up App.js to start working on your app!</Text>
+        </View>
+        
+
+
+        <View className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <View
+        className='pl-5 pt-3'
+        >
+        <Text
+              className='text-2xl font-bold text-gray-800 dark:text-white'
+            >
+              Aquaponia chega ao RJ
+            </Text>
+        </View>
+        
+
+          <View className="p-5">
+            <Image
+              resizeMode='contain'
+              style={{
+                width: '100%',
+                height: 110,
+                resizeMode: 'cover',
+                borderRadius: 10,
+                marginBottom: 10
+              }}
+              source={
+                require(
+                  '../../../assets/blog-1.jpg'
+                )
+              }
+            />
+            
+            <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              A aquaponia é um sistema de produção de alimentos que combina a criação de peixes com o cultivo de plantas em uma simbiose natural e equilibrada.
+            </Text>
+            <Text className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg- rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Saiba mais
+            </Text>
+          </View>
+        </View>
       </View>
     </>
   )
