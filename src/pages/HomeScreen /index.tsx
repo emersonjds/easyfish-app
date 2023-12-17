@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Button, Image, Text, View } from 'react-native';
 
 const HomeScreen: React.FC = () => {
 
@@ -14,27 +14,27 @@ const HomeScreen: React.FC = () => {
         <View
           className='mb-5'
         >
-        <Text
-          className='text-4xl font-bold text-gray-800 dark:text-white'
-        >
-          Noticias do Dia
-        </Text>
+          <Text
+            className='text-4xl font-bold text-gray-800 dark:text-white'
+          >
+            Noticias do Dia
+          </Text>
         </View>
-        
+
 
 
         <View className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-        <View
-        className='pl-5 pt-3'
-        >
-        <Text
+          <View
+            className='pl-5 pt-3'
+          >
+            <Text
               className='text-2xl font-bold text-gray-800 dark:text-white'
             >
               Aquaponia chega ao RJ
             </Text>
-        </View>
-        
+          </View>
+
 
           <View className="p-5">
             <Image
@@ -52,13 +52,16 @@ const HomeScreen: React.FC = () => {
                 )
               }
             />
-            
+
             <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               A aquaponia é um sistema de produção de alimentos que combina a criação de peixes com o cultivo de plantas em uma simbiose natural e equilibrada.
             </Text>
-            <Text className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg- rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Saiba mais
-            </Text>
+
+            <Button
+              color="#5ccaf4"
+              title="Saiba mais ... "
+              accessibilityLabel="Saiba mais ... "
+            />
           </View>
         </View>
       </View>
