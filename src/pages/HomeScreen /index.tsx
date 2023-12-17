@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-const Notification: React.FC = () => {
+const HomeScreen: React.FC = () => {
   return (
     <>
       <View
@@ -15,11 +15,11 @@ const Notification: React.FC = () => {
       >
         <Text style={{ fontSize: 30, color: '#000' }}
         >
-          Notification
+          HomeScreen
         </Text>
       </View>
     </>
-  );
+  )
 }
 
-export default Notification;
+export default HomeScreen;
