@@ -5,13 +5,15 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { Entypo, FontAwesome, AntDesign } from '@expo/vector-icons';
-import Trips from "./src/pages/Analises";
+import { Entypo, AntDesign, FontAwesome5 } from '@expo/vector-icons';
 import HomeScreen from "./src/pages/HomeScreen ";
 import Notification from "./src/pages/Notification";
 import Analises from "./src/pages/Analises";
 
+
+
 import { Foundation } from '@expo/vector-icons';
+import Store from "./src/pages/Store";
 
 
 const Tab = createBottomTabNavigator();
@@ -53,6 +55,18 @@ const MyTabs = () => {
           headerShown: false,
           tabBarIcon: ({ color }) => (
             <Entypo name="notification" size={24} color="black" />
+          ),
+        }} />
+
+      <Tab.Screen name="Loja" component={Store}
+        options={{
+          tabBarLabel: "Loja",
+          tabBarLabelStyle: {
+            color: "#000",
+          },
+          headerShown: false,
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 name="store" size={24} color="black" />
           ),
         }} />
 
