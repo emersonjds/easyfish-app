@@ -6,6 +6,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Entypo, FontAwesome, AntDesign } from '@expo/vector-icons';
+import Trips from "./src/pages/Trips";
+import HomeScreen from "./src/pages/HomeScreen ";
+import Notification from "./src/pages/Notification";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -37,7 +40,7 @@ const MyTabs = () => {
           ),
         }} />
 
-      <Tab.Screen name="Profile" component={Notification}
+      <Tab.Screen name="Notification" component={Notification}
         options={{
           tabBarLabel: "Notificações",
           tabBarLabelStyle: {
@@ -52,3 +55,23 @@ const MyTabs = () => {
     </Tab.Navigator>
   )
 }
+
+const Routes = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={MyTabs}
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default Routes;
+
+

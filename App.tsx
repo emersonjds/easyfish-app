@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 
 import { StyleSheet, View, Text, Image } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import Routes from './routes';
 
 const slides = [
   {
@@ -56,17 +57,21 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
 
-    <AppIntroSlider
-      contentContainerStyle={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-      data={slides}
-      renderItem={renderItem}
+    // <AppIntroSlider
+    //   contentContainerStyle={{
+    //     flex: 1,
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //   }}
+    //   data={slides}
+    //   renderItem={renderItem}
     // renderDoneButton={this._renderDoneButton}
     // renderNextButton={this._renderNextButton}
-    />
+    // />
+
+    <>
+      <Routes />
+    </>
   );
 }
 
