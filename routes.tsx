@@ -9,11 +9,14 @@ import { Entypo, AntDesign, FontAwesome5 } from '@expo/vector-icons';
 import HomeScreen from "./src/pages/HomeScreen ";
 import Notification from "./src/pages/Notification";
 import Analises from "./src/pages/Analises";
+import { MaterialIcons } from '@expo/vector-icons';
+
 
 
 
 import { Foundation } from '@expo/vector-icons';
 import Store from "./src/pages/Store";
+import Faq from "./src/pages/Faq";
 
 
 const Tab = createBottomTabNavigator();
@@ -69,6 +72,19 @@ const MyTabs = () => {
             <FontAwesome5 name="store" size={24} color="black" />
           ),
         }} />
+
+      <Tab.Screen name="FAQ" component={Faq}
+        options={{
+          tabBarLabel: "Faq",
+          tabBarLabelStyle: {
+            color: "#000",
+          },
+          headerShown: false,
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="question-answer" size={24} color="black" />
+          ),
+        }} />
+
 
     </Tab.Navigator>
   )
