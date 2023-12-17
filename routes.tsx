@@ -6,9 +6,13 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Entypo, FontAwesome, AntDesign } from '@expo/vector-icons';
-import Trips from "./src/pages/Trips";
+import Trips from "./src/pages/Analises";
 import HomeScreen from "./src/pages/HomeScreen ";
 import Notification from "./src/pages/Notification";
+import Analises from "./src/pages/Analises";
+
+import { Foundation } from '@expo/vector-icons';
+
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -28,15 +32,15 @@ const MyTabs = () => {
           ),
         }} />
 
-      <Tab.Screen name="Travel" component={Trips}
+      <Tab.Screen name="Analises" component={Analises}
         options={{
-          tabBarLabel: "Viagens",
+          tabBarLabel: "Analises",
           tabBarLabelStyle: {
             color: "#000",
           },
           headerShown: false,
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="plane" size={24} color="black" />
+            <Foundation name="graph-bar" size={24} color="black" />
           ),
         }} />
 
