@@ -18,7 +18,6 @@ const HomeScreen: React.FC = () => {
                 Aquaponia chega ao RJ
               </Text>
             </View>
-
             <View className="p-5">
               <Image
                 resizeMode="contain"
@@ -31,13 +30,11 @@ const HomeScreen: React.FC = () => {
                 }}
                 source={require("../../../assets/blog-1.jpg")}
               />
-
               <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 A aquaponia é um sistema de produção de alimentos que combina a
                 criação de peixes com o cultivo de plantas em uma simbiose
                 natural e equilibrada.
               </Text>
-
               <Button
                 color="#5ccaf4"
                 title="Saiba mais ... "
@@ -45,14 +42,12 @@ const HomeScreen: React.FC = () => {
               />
             </View>
           </View>
-
           <View className="max-w-sm bg-white border border-gray-200 mb-5">
             <View className="px-5 pt-3">
               <Text className="text-xl font-bold text-gray-800 dark:text-white">
                 Consumo de tilapia duplicará até 2030
               </Text>
             </View>
-
             <View className="p-5">
               <Image
                 resizeMode="contain"
@@ -65,13 +60,11 @@ const HomeScreen: React.FC = () => {
                 }}
                 source={require("../../../assets/foto-2.jpg")}
               />
-
               <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 A aquaponia é um sistema de produção de alimentos que combina a
                 criação de peixes com o cultivo de plantas em uma simbiose
                 natural e equilibrada.
               </Text>
-
               <Button
                 color="#5ccaf4"
                 title="Saiba mais ... "
@@ -79,14 +72,12 @@ const HomeScreen: React.FC = () => {
               />
             </View>
           </View>
-
           <View className="max-w-sm bg-white border border-gray-200 mb-5">
             <View className="pl-5 pt-3">
               <Text className="text-xl font-bold text-gray-800 dark:text-white">
                 EasyFish ganha premio da ONU em 4 ODS's
               </Text>
             </View>
-
             <View className="p-5">
               <Image
                 resizeMode="contain"
@@ -97,13 +88,11 @@ const HomeScreen: React.FC = () => {
                 }}
                 source={require("../../../assets/EasyFish.png")}
               />
-
               <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Plataforma que traz o cultivo de tilapia para comunidades em SP,
                 RJ, MG e ES ganha premio da ONU em 4 ODS's (Objetivos de
                 Desenvolvimento Sustentável)
               </Text>
-
               <Button
                 color="#5ccaf4"
                 title="Saiba mais ... "
