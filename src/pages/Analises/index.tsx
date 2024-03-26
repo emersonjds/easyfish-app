@@ -1,43 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import { BarChart, LineChart, PieChart } from "react-native-gifted-charts";
+import { BarChart, LineChart, PieChart } from 'react-native-gifted-charts';
 import { barData, data, lineData, lineData2 } from './data';
-
-
 
 const Analises: React.FC = () => {
   return (
     <>
       <StatusBar style="dark" />
-      <View
-        className='flex-1 mt-10'
-      >
-
+      <View className="mt-10 flex-1">
         <ScrollView>
-
           <View>
-            <Text className='text-2xl font-bold text-center'
-            >
+            <Text className="text-center text-2xl font-bold">
               Analises da Semana
             </Text>
           </View>
 
-          <View
-            className='flex-1 mt-5 items-center'
-          >
-            <Text className='text-2xl font-bold text-center'>
-              Temperatura
-            </Text>
+          <View className="mt-5 flex-1 items-center">
+            <Text className="text-center text-2xl font-bold">Temperatura</Text>
             <LineChart data={data} areaChart />
           </View>
 
-          <View
-            className='flex-1 mt-5 items-center'
-          >
-            <Text className='text-2xl font-bold text-center'>
-              Ph da Agua
-            </Text>
+          <View className="mt-5 flex-1 items-center">
+            <Text className="text-center text-2xl font-bold">Ph da Agua</Text>
             <BarChart
               barWidth={22}
               noOfSections={3}
@@ -47,32 +32,10 @@ const Analises: React.FC = () => {
               yAxisThickness={0}
               xAxisThickness={0}
             />
-
           </View>
 
-
-          {/* <View
-            className='flex-1 mt-5 items-center'
-          >
-            <Text className='text-2xl font-bold text-center'>
-              Temperatura
-            </Text>
-            <PieChart
-              donut
-              showText
-              textColor="black"
-              innerRadius={70}
-              showTextBackground
-              textBackgroundColor="white"
-              textBackgroundRadius={22}
-              data={pieData}
-            />
-          </View> */}
-
-          <View
-            className='flex-1 mt-5 items-center'
-          >
-            <Text className='text-2xl font-bold text-center'>
+          <View className="mt-5 flex-1 items-center">
+            <Text className="text-center text-2xl font-bold">
               Nivel da Caixa D'agua
             </Text>
             <View>
@@ -96,15 +59,10 @@ const Analises: React.FC = () => {
               />
             </View>
           </View>
-
-
         </ScrollView>
-
-
-
       </View>
     </>
   );
-}
+};
 
 export default Analises;
