@@ -8,10 +8,15 @@ interface FAQAccordionProps {
   answer: string;
   activeQuestion: number;
   setActiveQuestion: (id: number) => void;
-
 }
 
-const FAQAccordion = ({ id, question, answer, activeQuestion, setActiveQuestion }) => {
+const FAQAccordion = ({
+  id,
+  question,
+  answer,
+  activeQuestion,
+  setActiveQuestion,
+}) => {
   const isCollapsed = id !== activeQuestion;
 
   const toggleAccordion = () => {
