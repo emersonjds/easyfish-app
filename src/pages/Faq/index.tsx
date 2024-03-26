@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ScrollView, View, Text } from 'react-native';
 import { cultivoTilapia } from './data';
 import FAQAccordion from './components/FazAccordion';
+import { useState } from 'react';
 
 const FAQScreen = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
