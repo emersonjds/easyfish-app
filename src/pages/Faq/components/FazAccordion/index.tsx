@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import Collapsible from 'react-native-collapsible';
 
@@ -10,7 +10,7 @@ interface FAQAccordionProps {
   setActiveQuestion: (id: number) => void;
 }
 
-const FAQAccordion = ({
+const FAQAccordion: React.FC<FAQAccordionProps> = ({
   id,
   question,
   answer,
